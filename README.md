@@ -96,3 +96,35 @@ COPY . .
 # Set the command to run your application
 CMD ["venv/bin/python", "app.py"]
 ```
+
+# Docker Commands
+
+1. Build the Docker Image
+
+```python
+docker build -t ml-docker-app .
+```
+
+2. Run the Docker Container
+
+```python
+docker run ml-docker-app
+```
+
+3. Login to Docker Hub
+
+```python
+docker login
+```
+
+4. Tag your Docker Image
+
+```python
+docker tag ml-docker-app username/ml-docker-app
+```
+
+5. Push the Image to Docker Hub
+
+```python
+docker push username/ml-docker-app
+```
