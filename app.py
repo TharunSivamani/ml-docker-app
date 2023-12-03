@@ -23,3 +23,7 @@ y_pred = clf.predict(X_test)
 
 # Model Accuracy, how often is the classifier correct?
 print(f"Accuracy: {accuracy_score(y_test, y_pred)*100:.4f} %")
+
+# Save the trained model
+joblib.dump(clf, 'iris_model.pkl')
+print("Model saved!")
